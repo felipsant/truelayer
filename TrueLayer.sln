@@ -3,29 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.WebApi", "TrueLayer.WebApi\TrueLayer.WebApi.csproj", "{596B3E44-7545-4E71-A31B-BA57A98FBC8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.WebApi", "TrueLayer.WebApi\TrueLayer.WebApi.csproj", "{596B3E44-7545-4E71-A31B-BA57A98FBC8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Services", "TrueLayer.Services\TrueLayer.Services.csproj", "{25CE016A-66EF-4512-8920-C1BCDE713196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Services", "TrueLayer.Services\TrueLayer.Services.csproj", "{25CE016A-66EF-4512-8920-C1BCDE713196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Repositories", "TrueLayer.Repositories\TrueLayer.Repositories.csproj", "{1792B2BA-E1BE-4CD6-8639-E5ACB3559053}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Repositories", "TrueLayer.Repositories\TrueLayer.Repositories.csproj", "{1792B2BA-E1BE-4CD6-8639-E5ACB3559053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Models", "TrueLayer.Models\TrueLayer.Models.csproj", "{63156380-66EE-4B84-9B58-BE0BD3DDA52A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Models", "TrueLayer.Models\TrueLayer.Models.csproj", "{63156380-66EE-4B84-9B58-BE0BD3DDA52A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Entities", "TrueLayer.Entities\TrueLayer.Entities.csproj", "{C1122DAE-6D80-4F16-BEAD-7A70B77A79CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Entities", "TrueLayer.Entities\TrueLayer.Entities.csproj", "{C1122DAE-6D80-4F16-BEAD-7A70B77A79CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{B541CE3B-9C7A-43FE-B4A2-7B69DEF46477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Services.Tests", "TrueLayer.Services.Tests\TrueLayer.Services.Tests.csproj", "{C8855BCE-EC8A-4F15-B822-C25BA3531247}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Services.IntegrationTests", "TrueLayer.Services.IntegrationTests\TrueLayer.Services.IntegrationTests.csproj", "{C8855BCE-EC8A-4F15-B822-C25BA3531247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Repositories.Tests", "TrueLayer.Repositories.Tests\TrueLayer.Repositories.Tests.csproj", "{92D78D8C-579B-45AB-9A48-46EC682B68B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Repositories.Tests", "TrueLayer.Repositories.Tests\TrueLayer.Repositories.Tests.csproj", "{92D78D8C-579B-45AB-9A48-46EC682B68B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Models.Tests", "TrueLayer.Models.Tests\TrueLayer.Models.Tests.csproj", "{DC4648E9-3C6F-45AB-87A6-CD7D298E969E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.Models.Tests", "TrueLayer.Models.Tests\TrueLayer.Models.Tests.csproj", "{DC4648E9-3C6F-45AB-87A6-CD7D298E969E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{86FE12A3-B8DA-4746-96B0-6D5C53F03E81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{F6F1255B-6C0E-4F12-8656-63D2887B6F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.WebApi.Tests", "TrueLayer.WebApi.Tests\TrueLayer.WebApi.Tests.csproj", "{95F46E36-3A20-4073-992A-9ED1320F7EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.WebApi.IntegrationTests", "TrueLayer.WebApi.Tests\TrueLayer.WebApi.IntegrationTests.csproj", "{95F46E36-3A20-4073-992A-9ED1320F7EE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4BB68AA5-F115-4B20-B2F7-3A70EA8DA30D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueLayer.Services.Tests", "TrueLayer.Services.Tests\TrueLayer.Services.Tests.csproj", "{A5872562-7EBB-405C-84B1-29D60BE72B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,16 +76,21 @@ Global
 		{95F46E36-3A20-4073-992A-9ED1320F7EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95F46E36-3A20-4073-992A-9ED1320F7EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95F46E36-3A20-4073-992A-9ED1320F7EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5872562-7EBB-405C-84B1-29D60BE72B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5872562-7EBB-405C-84B1-29D60BE72B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5872562-7EBB-405C-84B1-29D60BE72B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5872562-7EBB-405C-84B1-29D60BE72B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C1122DAE-6D80-4F16-BEAD-7A70B77A79CC} = {86FE12A3-B8DA-4746-96B0-6D5C53F03E81}
-		{C8855BCE-EC8A-4F15-B822-C25BA3531247} = {B541CE3B-9C7A-43FE-B4A2-7B69DEF46477}
+		{C8855BCE-EC8A-4F15-B822-C25BA3531247} = {F6F1255B-6C0E-4F12-8656-63D2887B6F22}
 		{92D78D8C-579B-45AB-9A48-46EC682B68B0} = {B541CE3B-9C7A-43FE-B4A2-7B69DEF46477}
 		{DC4648E9-3C6F-45AB-87A6-CD7D298E969E} = {B541CE3B-9C7A-43FE-B4A2-7B69DEF46477}
 		{95F46E36-3A20-4073-992A-9ED1320F7EE0} = {F6F1255B-6C0E-4F12-8656-63D2887B6F22}
+		{A5872562-7EBB-405C-84B1-29D60BE72B50} = {B541CE3B-9C7A-43FE-B4A2-7B69DEF46477}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80F64910-2E87-49FF-BDD1-84E108AB931C}

@@ -1,6 +1,7 @@
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TrueLayer.WebApi.Tests
+namespace TrueLayer.WebApi.IntegrationTests
 {
     [TestClass]
     public class UnitTest1
