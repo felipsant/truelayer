@@ -64,7 +64,7 @@ namespace TrueLayer.Services
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public async Task<string> GetPokemonDescription(string name)
+        public virtual async Task<string> GetPokemonDescription(string name)
         {
             // Find pokemon Id by it's name
             var pokemon = await GetPokemon(name);

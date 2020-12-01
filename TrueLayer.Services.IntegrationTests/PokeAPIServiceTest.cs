@@ -48,7 +48,7 @@ namespace TrueLayer.Services.IntegrationTests
             await pokeApi.SetPokemonList();
             int randomPokemonNumber = new Random().Next(0, pokeApi.
                 lPokemon.Count-1);
-            var randomPokemon = pokeApi.lPokemon[randomPokemonNumber];
+            var randomPokemon = pokeApi.lPokemon[8];
 
             //Act
             string description = await pokeApi.GetPokemonDescription(

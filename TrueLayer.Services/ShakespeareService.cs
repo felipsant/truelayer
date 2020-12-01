@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -21,6 +22,8 @@ namespace TrueLayer.Services
                 BaseAddress = new System.Uri(
                     "https://api.funtranslations.com/")
             };
+            this.httpClient.DefaultRequestHeaders.Accept
+                .Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         /// <summary>
@@ -30,17 +33,21 @@ namespace TrueLayer.Services
         /// </summary>
         /// <param name="toBeTranslated"></param>
         /// <returns>Converted Shakespeare description or null</returns>
-        public async Task<string> TranslateText(string toBeTranslated)
+        public virtual async Task<string> TranslateText(string toBeTranslated)
         {
             string result = null;
             string text = HttpUtility.UrlEncode(toBeTranslated);
             var response = await httpClient.GetAsync($"translate/" +
-                $"shakespeare.json?text=" + $"{text}");
+                $"shakespeare?text=" + $"{text}");
             if (response.IsSuccessStatusCode) {
 
                 dynamic contentResult = JsonConvert.DeserializeObject(
                     await response.Content.ReadAsStringAsync());
                 result = contentResult["contents"]["translated"];
+            }
+            else
+            {
+                throw new Exception("Translation Failure");
             }
             return result;
         }

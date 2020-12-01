@@ -8,4 +8,10 @@
     <PackageReference Include="PokeApiNet" Version="3.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TrueLayer.Entities\TrueLayer.Entities.csproj" />
+    <ProjectReference Include="..\TrueLayer.Models\TrueLayer.Models.csproj" />
+    <ProjectReference Include="..\TrueLayer.Repositories\TrueLayer.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
