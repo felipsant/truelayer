@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace TrueLayer.Repositories
 {
-    public class GenericRepository<T, TKey> : IGenericRepository<T, TKey> where T : class
+    public class GenericRepository<T, TKey> : IGenericRepository<T, TKey> 
+        where T : class
     {
         public DbContext ctx;
         public DbSet<T> _dbSet;

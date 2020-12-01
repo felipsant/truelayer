@@ -37,7 +37,6 @@ namespace TrueLayer.Services
             pokeRepository = _pokeRepository;
         }
 
-
         /// <summary>
         /// Consumes both PokeApiNet and Shakespeare translator API's in order 
         /// to return the desired pokemon shakespeared description
