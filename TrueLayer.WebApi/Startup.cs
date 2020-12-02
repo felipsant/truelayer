@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TrueLayer.Services;
 
 namespace TrueLayer.WebApi
 {
@@ -26,6 +27,7 @@ namespace TrueLayer.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<PokemonTranslatorService, PokemonTranslatorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

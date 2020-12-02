@@ -13,7 +13,7 @@ namespace TrueLayer.Services
     /// </summary>
     public class PokemonTranslatorService
     {
-        private PokeAPIService pokeService;
+        public PokeAPIService pokeService;
         private ShakespeareService shakeService;
         public GenericRepository<PokemonEntity, string> pokeRepository;
         private PokemonDBContext pokemonDBContext;

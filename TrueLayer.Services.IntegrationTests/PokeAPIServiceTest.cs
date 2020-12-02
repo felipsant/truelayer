@@ -19,8 +19,6 @@ namespace TrueLayer.Services.IntegrationTests
         {
             //Arrange
             //Act
-            await pokeApi.SetPokemonList();
-
             //Assert
             Assert.IsTrue(pokeApi.lPokemon.Count >= 0);
         }
@@ -29,7 +27,6 @@ namespace TrueLayer.Services.IntegrationTests
         public async Task GetPokemon_Should_ReturnPokemonData()
         {
             //Arrange
-            await pokeApi.SetPokemonList();
             int randomPokemonNumber = new Random().Next(1, pokeApi.
                 lPokemon.Count);
             var randomPokemon = pokeApi.lPokemon[randomPokemonNumber];
@@ -45,7 +42,6 @@ namespace TrueLayer.Services.IntegrationTests
         public async Task GetPokemonDescription_Should_ReturnDescription()
         {
             //Arrange
-            await pokeApi.SetPokemonList();
             int randomPokemonNumber = new Random().Next(0, pokeApi.
                 lPokemon.Count-1);
             var randomPokemon = pokeApi.lPokemon[8];

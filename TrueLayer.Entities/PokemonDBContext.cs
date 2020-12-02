@@ -15,7 +15,10 @@ namespace TrueLayer.Entities
                 _created = true;
                 if (Database != null)
                 {
-                    Database.EnsureDeleted();
+                    //For Local dev - Reset database everytime it is re-run.
+                    #if DEBUG
+                        Database.EnsureDeleted();
+                    #endif
                     Database.EnsureCreated();
                 }
             }

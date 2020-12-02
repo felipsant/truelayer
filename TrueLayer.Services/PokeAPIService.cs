@@ -20,17 +20,19 @@ namespace TrueLayer.Services
         public PokeAPIService()
         {
             pokeClient = new PokeApiClient();
+            SetPokemonList().Wait();
         }
 
         public PokeAPIService(PokeApiClient nPokeClient)
         {
             pokeClient = nPokeClient;
+            SetPokemonList().Wait();
         }
 
         /// <summary>
         /// Sets the list of valid pokemon names.
         /// </summary>
-        public async Task SetPokemonList()
+        private async Task SetPokemonList()
         {
             var clientResult = await pokeClient.GetNamedResourcePageAsync
                 <Pokemon>(-1,0, default);
