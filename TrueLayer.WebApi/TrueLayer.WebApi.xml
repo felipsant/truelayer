@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TrueLayer.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:TrueLayer.WebApi.Controllers.PokemonTranslatorController.Get">
+            <summary>
+            Get the List of Pokemon names that can be used 
+            </summary>
+            <returns>List with the valid Pokemon names</returns>
+        </member>
+        <member name="M:TrueLayer.WebApi.Controllers.PokemonTranslatorController.Get(System.String)">
+            <summary>
+            Get Pokemon shakespeare description 
+            </summary>
+            <returns>String shakespeare description </returns>
+            <param name="pokemon" example="pikachu">The name of the pokemon</param>
+        </member>
+    </members>
+</doc>

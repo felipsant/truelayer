@@ -25,12 +25,17 @@ namespace TrueLayer.WebApi.Controllers
             _ptService = ptService;
         }
 
+        /// <summary>
+        /// Get the List of Pokemon names that can be used 
+        /// </summary>
+        /// <returns>List with the valid Pokemon names</returns>
         [HttpGet]
         public async Task<IEnumerable<string>> Get()
         {
             try
             {
-                return _ptService.pokeService.lPokemon.Select(c => c.Name).ToList();
+                return _ptService.pokeService.lPokemon.Select(c => c.Name)
+                    .ToList();
             }
             catch(Exception ex)
             {
@@ -38,6 +43,11 @@ namespace TrueLayer.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Get Pokemon shakespeare description 
+        /// </summary>
+        /// <returns>String shakespeare description </returns>
+        /// <param name="pokemon" example="pikachu">The name of the pokemon</param>
         [HttpGet]
         [Route("{pokemon}")]
         public async Task<string> Get(string pokemon)

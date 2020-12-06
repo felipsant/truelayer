@@ -37,7 +37,8 @@ namespace TrueLayer.Services
         {
             string result = null;
             //Clean string
-            toBeTranslated = toBeTranslated.Replace("\n", "").Replace("\r", "");
+            toBeTranslated = toBeTranslated.Replace("\n", "").Replace("\r", 
+                " ");
             string text = HttpUtility.UrlEncode(toBeTranslated);
             var response = await httpClient.GetAsync($"translate/" +
                 $"shakespeare?text=" + $"{text}");
