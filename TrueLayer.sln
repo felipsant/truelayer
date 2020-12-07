@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{86
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{F6F1255B-6C0E-4F12-8656-63D2887B6F22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.WebApi.IntegrationTests", "TrueLayer.WebApi.Tests\TrueLayer.WebApi.IntegrationTests.csproj", "{95F46E36-3A20-4073-992A-9ED1320F7EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueLayer.WebApi.IntegrationTests", "TrueLayer.WebApi.IntegrationTests\TrueLayer.WebApi.IntegrationTests.csproj", "{95F46E36-3A20-4073-992A-9ED1320F7EE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4BB68AA5-F115-4B20-B2F7-3A70EA8DA30D}"
 	ProjectSection(SolutionItems) = preProject
