@@ -35,5 +35,20 @@ namespace TrueLayer.WebApi.IntegrationTests
             dynamic result = JsonConvert.DeserializeObject(content);
             Assert.IsTrue(result.Count > 0);
         }
+
+        [TestMethod]
+        public async Task GetPokemonByName_Should_ReturnPokemonDescription()
+        {
+            //Arrange
+            //Act
+            var response = await _client.GetAsync("pokemon/pikachu");
+
+            //Assert
+            Assert.IsTrue(response.IsSuccessStatusCode);
+            var content = await response.Content.ReadAsStringAsync();
+
+            dynamic result = JsonConvert.DeserializeObject(content);
+            Assert.IsTrue(!string.IsNullOrEmpty(result));
+        }
     }
 }

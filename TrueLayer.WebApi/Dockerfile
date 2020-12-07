@@ -11,7 +11,7 @@ RUN dotnet publish "TrueLayer.WebApi.csproj" -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS release
 WORKDIR /app
 COPY --from=build /app/publish .
-EXPOSE 5000 5001
-ENV ASPNETCORE_URLS http://*:5000
-ENV ASPNETCORE_HTTPS_PORT https://+:5001
+EXPOSE 5000
+ENV ASPNETCORE_URLS http://+:5000
+ENV ASPNETCORE_ENVIRONMENT="production"
 ENTRYPOINT ["dotnet", "TrueLayer.WebApi.dll"]
