@@ -16,6 +16,12 @@ namespace TrueLayer.WebApi.Controllers
         private readonly ILogger<PokemonTranslatorController> _logger;
         private PokemonTranslatorService _ptService;
 
+        /// <summary>
+        /// Initialization for this method expects an PokemonTranslatorService
+        /// and the ILogger.
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="ptService"></param>
         public PokemonTranslatorController(
             ILogger<PokemonTranslatorController> logger,
             PokemonTranslatorService ptService
@@ -30,7 +36,7 @@ namespace TrueLayer.WebApi.Controllers
         /// </summary>
         /// <returns>List with the valid Pokemon names</returns>
         [HttpGet]
-        public async Task<IEnumerable<string>> Get()
+        public IEnumerable<string> Get()
         {
             try
             {

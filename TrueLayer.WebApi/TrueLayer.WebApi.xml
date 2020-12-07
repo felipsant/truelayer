@@ -4,6 +4,14 @@
         <name>TrueLayer.WebApi</name>
     </assembly>
     <members>
+        <member name="M:TrueLayer.WebApi.Controllers.PokemonTranslatorController.#ctor(Microsoft.Extensions.Logging.ILogger{TrueLayer.WebApi.Controllers.PokemonTranslatorController},TrueLayer.Services.PokemonTranslatorService)">
+            <summary>
+            Initialization for this method expects an PokemonTranslatorService
+            and the ILogger.
+            </summary>
+            <param name="logger"></param>
+            <param name="ptService"></param>
+        </member>
         <member name="M:TrueLayer.WebApi.Controllers.PokemonTranslatorController.Get">
             <summary>
             Get the List of Pokemon names that can be used 

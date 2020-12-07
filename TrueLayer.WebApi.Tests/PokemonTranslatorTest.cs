@@ -15,7 +15,7 @@ namespace TrueLayer.WebApi.IntegrationTests
         public PokemonTranslatorTest()
         {
             _client = new HttpClient(){
-                BaseAddress = new System.Uri("http://localhost:44303/")
+                BaseAddress = new System.Uri("http://localhost:5000/")
             };
             this._client.DefaultRequestHeaders.Accept
                 .Add(new MediaTypeWithQualityHeaderValue("application/json"));
